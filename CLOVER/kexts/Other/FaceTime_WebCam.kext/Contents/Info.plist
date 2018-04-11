@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.driver.CustomPeripheral</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>CustomPeripheral</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>8.8.8</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>FHD1 Camera Device - Laptop_Integrated_Webcam_FHD 1bcf-280a</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Product Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>USB Serial Number</key>
+				<string>DJHB2F000LDH7FL0</string>
+				<key>USB Vendor Name</key>
+				<string>Apple Inc.</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>iManufacturer</key>
+				<integer>1</integer>
+				<key>iProduct</key>
+				<integer>2</integer>
+				<key>iSerialNumber</key>
+				<integer>3</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+				<key>kSuspendPort</key>
+				<true/>
+				<key>non-removable</key>
+				<string>yes</string>
+			</dict>
+			<key>idProduct</key>
+			<integer>11147</integer>
+			<key>idVendor</key>
+			<integer>7119</integer>
+		</dict>
+		<key>FHD1 Camera Interface A</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBInterface</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Interface Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+			</dict>
+			<key>bConfigurationValue</key>
+			<string>*</string>
+			<key>bInterfaceNumber</key>
+			<integer>0</integer>
+			<key>idProduct</key>
+			<integer>11147</integer>
+			<key>idVendor</key>
+			<integer>7119</integer>
+		</dict>
+		<key>FHD1 Camera Interface B</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBInterface</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Interface Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+			</dict>
+			<key>bConfigurationValue</key>
+			<string>*</string>
+			<key>bInterfaceNumber</key>
+			<integer>1</integer>
+			<key>idProduct</key>
+			<integer>11147</integer>
+			<key>idVendor</key>
+			<integer>7119</integer>
+		</dict>
+		<key>FHD2 Camera Device - Laptop_Integrated_Webcam_FHD 408-2fb1</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Product Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>USB Serial Number</key>
+				<string>DJHB2F000LDH7FL0</string>
+				<key>USB Vendor Name</key>
+				<string>Apple Inc.</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>iManufacturer</key>
+				<integer>1</integer>
+				<key>iProduct</key>
+				<integer>2</integer>
+				<key>iSerialNumber</key>
+				<integer>3</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+				<key>kSuspendPort</key>
+				<true/>
+				<key>non-removable</key>
+				<string>yes</string>
+			</dict>
+			<key>idProduct</key>
+			<integer>12209</integer>
+			<key>idVendor</key>
+			<integer>1032</integer>
+		</dict>
+		<key>FHD2 Camera Interface A</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBInterface</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Interface Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+			</dict>
+			<key>bConfigurationValue</key>
+			<string>*</string>
+			<key>bInterfaceNumber</key>
+			<integer>0</integer>
+			<key>idProduct</key>
+			<integer>12209</integer>
+			<key>idVendor</key>
+			<integer>1032</integer>
+		</dict>
+		<key>FHD2 Camera Interface B</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBInterface</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Interface Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+			</dict>
+			<key>bConfigurationValue</key>
+			<string>*</string>
+			<key>bInterfaceNumber</key>
+			<integer>1</integer>
+			<key>idProduct</key>
+			<integer>12209</integer>
+			<key>idVendor</key>
+			<integer>1032</integer>
+		</dict>
+		<key>HD1 Camera Device - Laptop_Integrated_Webcam_HD 1bcf-2980</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Product Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>USB Serial Number</key>
+				<string>DJHB2F000LDH7FL0</string>
+				<key>USB Vendor Name</key>
+				<string>Apple Inc.</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>iManufacturer</key>
+				<integer>1</integer>
+				<key>iProduct</key>
+				<integer>2</integer>
+				<key>iSerialNumber</key>
+				<integer>3</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+				<key>kSuspendPort</key>
+				<true/>
+				<key>non-removable</key>
+				<string>yes</string>
+			</dict>
+			<key>idProduct</key>
+			<integer>11147</integer>
+			<key>idVendor</key>
+			<integer>7119</integer>
+		</dict>
+		<key>HD1 Camera Interface A</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBInterface</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Interface Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+			</dict>
+			<key>bConfigurationValue</key>
+			<string>*</string>
+			<key>bInterfaceNumber</key>
+			<integer>0</integer>
+			<key>idProduct</key>
+			<integer>11147</integer>
+			<key>idVendor</key>
+			<integer>7119</integer>
+		</dict>
+		<key>HD1 Camera Interface B</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBInterface</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Interface Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+			</dict>
+			<key>bConfigurationValue</key>
+			<string>*</string>
+			<key>bInterfaceNumber</key>
+			<integer>1</integer>
+			<key>idProduct</key>
+			<integer>11147</integer>
+			<key>idVendor</key>
+			<integer>7119</integer>
+		</dict>
+		<key>HD2 Camera Device - Laptop_Integrated_Webcam_HD 1bcf-2881</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Product Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>USB Serial Number</key>
+				<string>DJHB2F000LDH7FL0</string>
+				<key>USB Vendor Name</key>
+				<string>Apple Inc.</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>iManufacturer</key>
+				<integer>1</integer>
+				<key>iProduct</key>
+				<integer>2</integer>
+				<key>iSerialNumber</key>
+				<integer>3</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+				<key>kSuspendPort</key>
+				<true/>
+				<key>non-removable</key>
+				<string>yes</string>
+			</dict>
+			<key>idProduct</key>
+			<integer>11147</integer>
+			<key>idVendor</key>
+			<integer>7119</integer>
+		</dict>
+		<key>HD2 Camera Interface A</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBInterface</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Interface Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+			</dict>
+			<key>bConfigurationValue</key>
+			<string>*</string>
+			<key>bInterfaceNumber</key>
+			<integer>0</integer>
+			<key>idProduct</key>
+			<integer>11147</integer>
+			<key>idVendor</key>
+			<integer>7119</integer>
+		</dict>
+		<key>HD2 Camera Interface B</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBInterface</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Interface Name</key>
+				<string>FaceTime HD Camera (Built-in)</string>
+				<key>bcdDevice</key>
+				<integer>1302</integer>
+				<key>idProduct</key>
+				<integer>34057</integer>
+				<key>idVendor</key>
+				<integer>1452</integer>
+			</dict>
+			<key>bConfigurationValue</key>
+			<string>*</string>
+			<key>bInterfaceNumber</key>
+			<integer>1</integer>
+			<key>idProduct</key>
+			<integer>11147</integer>
+			<key>idVendor</key>
+			<integer>7119</integer>
+		</dict>
+		<key>HDA Hardware Config Resource</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleHDAHardwareConfigDriver</string>
+			<key>HDAConfigDefault</key>
+			<array>
+				<dict>
+					<key>CodecID</key>
+					<integer>283902569</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccEAEnHQEBJx6gAScfkAFHHEABRx0BAUce
+					EAFHH5ABdxzwAXcdAAF3HgABdx9AAYccIAGH
+					HTABhx6BAYcfAQGXHPABlx0AAZceAAGXH0AB
+					pxzwAacdAAGnHgABpx9AAbcc8AG3HQABtx4A
+					AbcfQAHXHPAB1x0AAdceAAHXH0AB5xzwAecd
+					AAHnHgAB5x9AAhccUAIXHUACFx4hAhcfAQ==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>28</integer>
+				</dict>
+				<dict>
+					<key>CodecID</key>
+					<integer>283903589</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccEAEnHQEBJx6gAScfkAFXHCABVx0BAVce
+					EAFXH5ABlxwwAZcdEAGXHiEBlx8BAaccHwGn
+					HRABpx6BAacfAQG3HC8Btx0QAbceIQG3HwEB
+					5xxAAecdEQHnHkUB5x8BAUcMAg==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>65</integer>
+				</dict>
+			</array>
+			<key>IOClass</key>
+			<string>AppleHDAHardwareConfigDriver</string>
+			<key>IOMatchCategory</key>
+			<string>AppleHDAHardwareConfigDriver</string>
+			<key>IOProviderClass</key>
+			<string>AppleHDAHardwareConfigDriverLoader</string>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.driver.IOPlatformPluginFamily</key>
+		<string>1.0.0</string>
+		<key>com.apple.iokit.IOGraphicsFamily</key>
+		<string>1.1</string>
+		<key>com.apple.iokit.IONDRVSupport</key>
+		<string>1.1</string>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>1.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>8.3.1</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>8.3.1</string>
+		<key>com.apple.kpi.mach</key>
+		<string>8.3.1</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
+</dict>
+</plist>
