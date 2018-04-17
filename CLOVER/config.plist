@@ -83,7 +83,7 @@
 				<key>FixACST</key>
 				<false/>
 				<key>FixADP1</key>
-				<true/>
+				<false/>
 				<key>FixAirport</key>
 				<false/>
 				<key>FixDarwin7</key>
@@ -177,6 +177,10 @@
 		<array>
 			<dict>
 				<key>Signature</key>
+				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
 				<string>CpuPm</string>
@@ -190,6 +194,8 @@
 				<string>Cpu0Ist</string>
 			</dict>
 		</array>
+		<key>PatchAPIC</key>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>#C3Latency</key>
@@ -256,7 +262,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>dart=0 darkwake=0 kext-dev-mode=1 rootless=0</string>
+		<string>dart=0 brcmfx-country=#a -brcmfxbeta darkwake=no -lilubeta</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -295,6 +301,8 @@
 		<string>0x0201</string>
 		<key>#UseARTFrequency</key>
 		<true/>
+		<key>QEMU</key>
+		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -531,8 +539,6 @@
 			<false/>
 			<key>FixOwnership</key>
 			<false/>
-			<key>Inject</key>
-			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
@@ -657,8 +663,15 @@
 		<string>0x01620005</string>
 		<key>EDID</key>
 		<dict>
+			<key>Custom</key>
+			<data>
+			AP///////wAw5PkEAAAAAAAZAQSVHxF46p01lFxVjykeUFQAAAAB
+			AQEBAQEBAQEBAQEBAQEBLjaAoHA4H0AwZDUANa4QAAAaAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAA/gBMRyBEaXNwbGF5CiAgAAAA/gBMUDE0
+			MFdGNi1TUEIyAJc=
+			</data>
 			<key>Inject</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Inject</key>
 		<dict>
@@ -946,66 +959,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>10.12+-BCM94352-fvco-darkvoid</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				gflSqgAAdSk=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.Brcm4360</string>
-				<key>Replace</key>
-				<data>
-				gflSqgAAZpA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.10+-BCM94352-Airport-Extreme-Skvo</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				axAAAHUN
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.10.x,10.11.x,10.12.x,10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.Brcm4360</string>
-				<key>Replace</key>
-				<data>
-				axAAAJCQ
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.11+-BCM94352-CC=#a-Ramalama</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QYP8/3QsSA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.11.x,10.12.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.Brcm4360</string>
-				<key>Replace</key>
-				<data>
-				ZscGI2HrKw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Zeroing 10ec0261 codec (patched by AppleHDA Patcher.app)</string>
 				<key>Disabled</key>
 				<false/>
@@ -1041,42 +994,31 @@
 				</data>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>Zeroing 10ec0885 codec (patched by AppleHDA Patcher.app)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				hQjsEA==
+				QYP8/3Q1SI1V0A==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.AirPort.BrcmNIC</string>
 				<key>Replace</key>
 				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Patching 11d41984 with 10ec0255 codec (patched by AppleHDA Patcher.app)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				hBnUEQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				VQLsEA==
+				ZscGREPrNI1V0A==
 				</data>
 			</dict>
 		</array>
+	</dict>
+	<key>RtVariables</key>
+	<dict>
+		<key>MLB</key>
+		<string>C02216601B1DY5GAS</string>
+		<key>ROM</key>
+		<data>
+		QGyPjmx0
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -1189,8 +1131,50 @@
 		<true/>
 		<key>#Version</key>
 		<string>1.0</string>
+		<key>BiosReleaseDate</key>
+		<string>02/02/2018</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MBP121.88Z.0174.B00.1802021047</string>
+		<key>Board-ID</key>
+		<string>Mac-E43C1C25D4880AD6</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02216601B1DY5GAS</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
+		<key>ChassisAssetTag</key>
+		<string>MacBook-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0x09</string>
+		<key>Family</key>
+		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE137</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
 		<key>Mobile</key>
 		<true/>
+		<key>PlatformFeature</key>
+		<string>0x02</string>
+		<key>ProductName</key>
+		<string>MacBookPro12,1</string>
+		<key>SerialNumber</key>
+		<string>C02HL53TDJYD</string>
+		<key>SmUUID</key>
+		<string>5C09AD7E-D6F1-3F53-B83A-339F7ADDD93B</string>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
@@ -1202,10 +1186,12 @@
 		<false/>
 		<key>#NvidiaWeb</key>
 		<false/>
+		<key>CustomUUID</key>
+		<string>5C09AD7E-D6F1-3F53-B83A-339F7ADDD93B</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
-		<false/>
+		<true/>
 	</dict>
 </dict>
 </plist>

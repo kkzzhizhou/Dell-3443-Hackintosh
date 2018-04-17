@@ -1324,7 +1324,7 @@
 					<key>EdgeSwipeFingers</key>
 					<integer>2</integer>
 					<key>EdgeSwipeLeft</key>
-					<integer>20</integer>
+					<integer>2</integer>
 					<key>EdgeSwipeRight</key>
 					<integer>14</integer>
 					<key>EdgeSwipeRight 2</key>
@@ -1374,7 +1374,7 @@
 					<key>2FingersTapAction</key>
 					<integer>33</integer>
 					<key>3FingersTapAction</key>
-					<integer>9</integer>
+					<integer>1</integer>
 					<key>4FingersTapAction</key>
 					<integer>3</integer>
 					<key>5FingersTapAction</key>
