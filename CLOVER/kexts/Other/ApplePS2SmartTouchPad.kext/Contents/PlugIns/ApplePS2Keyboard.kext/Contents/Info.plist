@@ -80,7 +80,7 @@
 				<key>KBBacklightUp</key>
 				<string></string>
 				<key>Launchpad</key>
-				<string>F9</string>
+				<string></string>
 				<key>MediaNext</key>
 				<string>F6</string>
 				<key>MediaPlayPause</key>
@@ -88,11 +88,11 @@
 				<key>MediaPrevious</key>
 				<string>F4</string>
 				<key>Misson Control</key>
-				<string>F8</string>
+				<string></string>
 				<key>SleepDisplay</key>
-				<string>F10</string>
+				<string></string>
 				<key>Touchpad</key>
-				<string>F7</string>
+				<string></string>
 				<key>VideoMirror</key>
 				<string></string>
 				<key>VolumeDown</key>
@@ -156,9 +156,9 @@
 				<key>Enable Sierra Caps Lock Fix</key>
 				<true/>
 				<key>FinerFnBrightnessControl</key>
-				<true/>
+				<false/>
 				<key>FinerFnVolumeControl</key>
-				<true/>
+				<false/>
 				<key>Make Caps Lock into key</key>
 				<integer>0</integer>
 				<key>Make ISO keypad key . to ,</key>
@@ -166,7 +166,7 @@
 				<key>Make Num Lock into Clear</key>
 				<false/>
 				<key>Make context menu key into key</key>
-				<integer>84</integer>
+				<integer>0</integer>
 				<key>Make delete key into cmd + backspace</key>
 				<false/>
 				<key>Make right alt into key</key>
@@ -174,7 +174,7 @@
 				<key>Make right control into key</key>
 				<integer>0</integer>
 				<key>Make shift + caps into Fn key</key>
-				<true/>
+				<false/>
 				<key>Num Lock enabled at boot</key>
 				<false/>
 				<key>Swap alt and windows key</key>

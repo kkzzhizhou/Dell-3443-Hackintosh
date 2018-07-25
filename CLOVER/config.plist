@@ -94,8 +94,6 @@
 				<false/>
 				<key>FixHPET</key>
 				<false/>
-				<key>FixHeaders</key>
-				<false/>
 				<key>FixIPIC</key>
 				<false/>
 				<key>FixIntelGfx</key>
@@ -127,20 +125,6 @@
 			<string>DSDT.aml</string>
 			<key>Patches</key>
 			<array>
-				<dict>
-					<key>Comment</key>
-					<string>Rename _DSM to XDSM</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
-				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change EHC1 to EH01</string>
@@ -194,6 +178,8 @@
 				<string>Cpu0Ist</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<false/>
 		<key>PatchAPIC</key>
 		<false/>
 		<key>SSDT</key>
@@ -262,7 +248,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>dart=0 brcmfx-country=#a -brcmfxbeta darkwake=no -lilubeta</string>
+		<string>-lilubeta nv_disable=1 dart=0 brcmfx-country=#a -brcmfxbeta darkwake=10</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -525,7 +511,7 @@
 			<key>AFGLowPowerState</key>
 			<false/>
 			<key>Inject</key>
-			<string>3</string>
+			<integer>3</integer>
 			<key>ResetHDA</key>
 			<false/>
 		</dict>
@@ -533,12 +519,16 @@
 		<false/>
 		<key>Inject</key>
 		<false/>
+		<key>LANInjection</key>
+		<false/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
 			<false/>
 			<key>FixOwnership</key>
 			<false/>
+			<key>Inject</key>
+			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
@@ -572,7 +562,7 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Hidden</key>
-					<false/>
+					<true/>
 					<key>Hotkey</key>
 					<string>P</string>
 					<key>Ignore</key>
@@ -580,21 +570,28 @@
 					<key>Image</key>
 					<string>\EFI\clover\icons\os_winpe.png</string>
 					<key>Path</key>
-					<string>\efi\microsoft\boot\bootmgfw.efi</string>
+					<string>\efi\winpe\boot\bootmgfw.efi</string>
 					<key>Title</key>
 					<string>WinPE</string>
 					<key>Type</key>
 					<string>Windows</string>
 					<key>Volume</key>
-					<string>9E2D6305-C841-4D34-9D57-2EAE73BD2A0E</string>
+					<string>BA0DEB5E-C1D2-46ED-BDC1-9F448B1C9758</string>
 				</dict>
 			</array>
 		</dict>
+		<key>CustomIcons</key>
+		<false/>
 		<key>Hide</key>
 		<array>
-			<string>vmlinuz</string>
 			<string>preboot</string>
+			<string>Recovery</string>
 		</array>
+		<key>Mouse</key>
+		<dict>
+			<key>Enabled</key>
+			<false/>
+		</dict>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
@@ -606,8 +603,10 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
+		<key>ShowOptimus</key>
+		<false/>
 		<key>Theme</key>
-		<string>bluemac</string>
+		<string>El Capitan</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -994,31 +993,42 @@
 				</data>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Zeroing 10ec0885 codec (patched by AppleHDA Patcher.app)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				QYP8/3Q1SI1V0A==
+				hQjsEA==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AirPort.BrcmNIC</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
-				ZscGREPrNI1V0A==
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Patching 11d41984 with 10ec0255 codec (patched by AppleHDA Patcher.app)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				hBnUEQ==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				VQLsEA==
 				</data>
 			</dict>
 		</array>
-	</dict>
-	<key>RtVariables</key>
-	<dict>
-		<key>MLB</key>
-		<string>C02216601B1DY5GAS</string>
-		<key>ROM</key>
-		<data>
-		QGyPjmx0
-		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -1132,17 +1142,17 @@
 		<key>#Version</key>
 		<string>1.0</string>
 		<key>BiosReleaseDate</key>
-		<string>02/02/2018</string>
+		<string>06/05/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP121.88Z.0174.B00.1802021047</string>
+		<string>MBP121.88Z.0177.B00.1806051659</string>
 		<key>Board-ID</key>
 		<string>Mac-E43C1C25D4880AD6</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02216601B1DY5GAS</string>
+		<string>C02747270GUF116JA</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -1170,9 +1180,7 @@
 		<key>ProductName</key>
 		<string>MacBookPro12,1</string>
 		<key>SerialNumber</key>
-		<string>C02HL53TDJYD</string>
-		<key>SmUUID</key>
-		<string>5C09AD7E-D6F1-3F53-B83A-339F7ADDD93B</string>
+		<string>C02VR29NH1DP</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
@@ -1187,7 +1195,7 @@
 		<key>#NvidiaWeb</key>
 		<false/>
 		<key>CustomUUID</key>
-		<string>5C09AD7E-D6F1-3F53-B83A-339F7ADDD93B</string>
+		<string>56114906-13B9-4A9E-BA16-EDA7B402C9FC</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
