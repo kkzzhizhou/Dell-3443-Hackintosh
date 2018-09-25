@@ -45,29 +45,29 @@
 			<key>Extended Functions</key>
 			<dict>
 				<key>F13</key>
-				<string>ALT CMD ESC</string>
+				<string></string>
 				<key>F14</key>
 				<string></string>
 				<key>F15</key>
 				<string></string>
 				<key>F16</key>
-				<string>ALT CMD D</string>
+				<string></string>
 				<key>F17</key>
-				<string>CTRL DAW</string>
+				<string></string>
 				<key>F18</key>
-				<string>CTRL UAW</string>
+				<string></string>
 				<key>F19</key>
-				<string>CTRL LAW</string>
+				<string></string>
 				<key>F20</key>
-				<string>CTRL RAW</string>
+				<string></string>
 				<key>F21</key>
 				<string></string>
 				<key>F22</key>
 				<string></string>
 				<key>F23</key>
-				<string>CMD Q</string>
+				<string></string>
 				<key>F24</key>
-				<string>CMD H</string>
+				<string></string>
 			</dict>
 			<key>Fn Keys Mode 1</key>
 			<dict>
@@ -138,9 +138,9 @@
 				<string>F3</string>
 			</dict>
 			<key>Fn keys Layout</key>
-			<string>DELL</string>
+			<string></string>
 			<key>Fn keys Mode</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>IOClass</key>
 			<string>ApplePS2Keyboard</string>
 			<key>IOProviderClass</key>
@@ -152,7 +152,7 @@
 				<key>Disable Num Lock LED</key>
 				<false/>
 				<key>Enable Extended Functions</key>
-				<true/>
+				<false/>
 				<key>Enable Sierra Caps Lock Fix</key>
 				<true/>
 				<key>FinerFnBrightnessControl</key>
@@ -160,7 +160,7 @@
 				<key>FinerFnVolumeControl</key>
 				<false/>
 				<key>Make Caps Lock into key</key>
-				<integer>0</integer>
+				<integer>68</integer>
 				<key>Make ISO keypad key . to ,</key>
 				<false/>
 				<key>Make Num Lock into Clear</key>
@@ -178,7 +178,7 @@
 				<key>Num Lock enabled at boot</key>
 				<false/>
 				<key>Swap alt and windows key</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>ProductID</key>
 			<integer>782</integer>
