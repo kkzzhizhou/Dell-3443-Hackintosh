@@ -24,7 +24,7 @@
 		<key>#smartUPS</key>
 		<false/>
 		<key>AutoMerge</key>
-		<true/>
+		<false/>
 		<key>DSDT</key>
 		<dict>
 			<key>#DropOEM_DSM</key>
@@ -87,7 +87,7 @@
 				<key>FixAirport</key>
 				<false/>
 				<key>FixDarwin</key>
-				<true/>
+				<false/>
 				<key>FixDarwin7</key>
 				<false/>
 				<key>FixDisplay</key>
@@ -109,7 +109,7 @@
 				<key>FixRegions</key>
 				<false/>
 				<key>FixS3D</key>
-				<true/>
+				<false/>
 				<key>FixSATA</key>
 				<false/>
 				<key>FixSBUS</key>
@@ -140,7 +140,7 @@
 			</dict>
 		</array>
 		<key>FixHeaders</key>
-		<true/>
+		<false/>
 		<key>PatchAPIC</key>
 		<false/>
 		<key>SSDT</key>
@@ -223,9 +223,9 @@
 		<key>NeverDoRecovery</key>
 		<false/>
 		<key>NeverHibernate</key>
-		<true/>
+		<false/>
 		<key>Timeout</key>
-		<integer>3</integer>
+		<integer>-1</integer>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
@@ -478,7 +478,7 @@
 			<key>AFGLowPowerState</key>
 			<false/>
 			<key>Inject</key>
-			<integer>3</integer>
+			<integer>28</integer>
 			<key>ResetHDA</key>
 			<false/>
 		</dict>
@@ -977,12 +977,6 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
-		<key>MLB</key>
-		<string>C02216601B1DY5GAS</string>
-		<key>ROM</key>
-		<data>
-		vJum+iLj
-		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -1095,48 +1089,10 @@
 		<true/>
 		<key>#Version</key>
 		<string>1.0</string>
-		<key>BiosReleaseDate</key>
-		<string>06/05/2018</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBP121.88Z.0177.B00.1806051659</string>
-		<key>Board-ID</key>
-		<string>Mac-E43C1C25D4880AD6</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C02544403GUF5021M</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x09</string>
-		<key>Family</key>
-		<string>MacBook Pro</string>
-		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
 		<key>Mobile</key>
 		<true/>
-		<key>PlatformFeature</key>
-		<string>0x02</string>
 		<key>ProductName</key>
 		<string>MacBookPro12,1</string>
-		<key>SerialNumber</key>
-		<string>C02QM0SCH1DP</string>
-		<key>SmUUID</key>
-		<string>A482EDC9-9A33-4306-89F4-E91161FA22E3</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
@@ -1150,10 +1106,10 @@
 		<false/>
 		<key>#NvidiaWeb</key>
 		<false/>
-		<key>CustomUUID</key>
-		<string>892A2494-3BB4-4CD1-8BF3-DE097E0F5DA7</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
+		<key>InjectSystemID</key>
+		<false/>
 	</dict>
 </dict>
 </plist>
